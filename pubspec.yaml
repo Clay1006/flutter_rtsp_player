@@ -1,0 +1,38 @@
+name: flutter_rtsp_player
+description: >-
+  A Flutter plugin for playing RTSP streams with full FFmpeg/VLC tuning.
+  Supports Android (ExoPlayer), iOS/macOS (VLCKit platform views), and
+  Windows/Linux (libVLC via Dart FFI).
+version: 0.1.0
+homepage: https://github.com/example/flutter_rtsp_player
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.7
+  ffi: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_rtsp_player
+        pluginClass: FlutterRtspPlayerPlugin
+      ios:
+        pluginClass: FlutterRtspPlayerPlugin
+      macos:
+        pluginClass: FlutterRtspPlayerPlugin
+      windows:
+        pluginClass: FlutterRtspPlayerPluginCApi
+        filename: flutter_rtsp_player_plugin_c_api.h
+      linux:
+        pluginClass: FlutterRtspPlayerPlugin
