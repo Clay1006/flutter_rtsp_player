@@ -1,6 +1,24 @@
 # flutter_rtsp_player
 
+[![pub.dev](https://img.shields.io/badge/pub.dev-flutter__rtsp__player-blue)](https://pub.dev/packages/flutter_rtsp_player)
+[![GitHub](https://img.shields.io/badge/GitHub-Clay1006%2Fflutter__rtsp__player-black?logo=github)](https://github.com/Clay1006/flutter_rtsp_player)
+
 A Flutter plugin for playing live **RTSP** streams (IP cameras, media servers, etc.) with full FFmpeg/VLC tuning support.
+
+**Clone or use as a Git dependency:**
+
+```bash
+git clone https://github.com/Clay1006/flutter_rtsp_player.git
+```
+
+```yaml
+# pubspec.yaml — use directly from GitHub
+dependencies:
+  flutter_rtsp_player:
+    git:
+      url: https://github.com/Clay1006/flutter_rtsp_player.git
+      ref: main
+```
 
 | Platform | Backend | Notes |
 |----------|---------|-------|
